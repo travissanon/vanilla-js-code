@@ -36,8 +36,6 @@ class AdminPerson extends CreatePerson {
 
 const admin1 = new AdminPerson("Patrick", 29, 1);
 
-admin1.increaseRank();
-
 console.log("-----class AdminPerson-----");
 
 console.log("Name and Age:", {
