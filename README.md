@@ -1,1 +1,1 @@
-# vanilla-js-programs
+# vanilla-js-code
