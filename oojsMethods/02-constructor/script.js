@@ -10,7 +10,7 @@ CreatePerson.prototype.greet = function () {
 
 const person1 = new CreatePerson("Mike", 30);
 
-console.log("-----class CreatePerson-----");
+console.log("-----[class CreatePerson]-----");
 
 console.log("Name and Age:", {
   name: person1.name,
@@ -25,11 +25,6 @@ function AdminPerson(name, age, rank) {
   this.rank = rank;
 }
 
-AdminPerson.prototype.increaseRank = function () {
-  this.rank += 1;
-  console.log("New Rank:", this.rank);
-};
-
 AdminPerson.prototype = Object.create(CreatePerson.prototype);
 
 AdminPerson.prototype.increaseRank = function () {
@@ -39,7 +34,7 @@ AdminPerson.prototype.increaseRank = function () {
 
 const admin1 = new AdminPerson("Patrick", 29, 1);
 
-console.log("-----class AdminPerson-----");
+console.log("-----[class AdminPerson]-----");
 
 console.log("Name and Age:", {
   name: admin1.name,
